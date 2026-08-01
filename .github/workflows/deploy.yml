@@ -40,7 +40,7 @@ jobs:
             maven-
 
       - name: Build + Tests
-        run: mvn clean verify
+        run: .\mvnw.cmd clean verify
 
       - name: Publicar artefato
         uses: actions/upload-artifact@v4
