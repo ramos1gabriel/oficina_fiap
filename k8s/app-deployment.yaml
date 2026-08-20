@@ -18,13 +18,11 @@ spec:
         app: spring-api
 
     spec:
-      imagePullSecrets:
-        - name: ghcr-secret
       containers:
 
         - name: spring-api
 
-          image: IMAGE_NAME
+          image: ghcr.io/ramos1gabriel/oficina_fiap/spring-api:aws
 
           imagePullPolicy: Always
 
